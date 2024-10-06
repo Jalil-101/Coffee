@@ -1,12 +1,15 @@
-import { View, Text, SafeAreaView, Image } from "react-native";
+import { View, Text, SafeAreaView, Image, TextInput } from "react-native";
 import React from "react";
 import MaterialIcons from "@expo/vector-icons/MaterialIcons";
+import Feather from "@expo/vector-icons/Feather";
+import Ionicons from "@expo/vector-icons/Ionicons";
+import Slider from "./Slider";
 
 const Head = () => {
   return (
-    <SafeAreaView className="bg-gray-800 ">
-      <View>
-        <View className=" h-3/5 w-full  ">
+    <View>
+      <View className="bg-gray-800 ">
+        <View className=" h-auto w-full  ">
           <View className="pt-4">
             <View className="p-4 flex-row justify-between">
               <View>
@@ -33,25 +36,37 @@ const Head = () => {
                 />
               </View>
             </View>
-                  </View>
-                  
-{/* Search Box  */}
+          </View>
 
+          {/* Search Box  */}
 
+          <View className=" mt-6">
+            <View>
+              <TextInput
+                className="border-2 py-3 mx-4  px-12  border-gray-700  bg-gray-700 rounded-lg text-xl text-white"
+                value={Text}
+                placeholder="Search coffee"
+                placeholderTextColor="#C0C0C0"
+              />
 
-
-
-
-
-
-
-
-
-
-
+              <View className="absolute left-6 top-4">
+                <Feather name="search" size={26} color="#DCD9D9" />
+              </View>
+            </View>
+          </View>
+          <View className=" ">
+            <View className="abolute left-3/4 bottom-12 ml-6 border-2 w-12 h-11 justify-center items-center rounded-lg border-[#C67C4E] bg-[#C67C4E] ">
+              <View>
+                <Ionicons name="options-outline" size={28} color="white" />
+              </View>
+            </View>
+          </View>
         </View>
-      </View>
-    </SafeAreaView>
+        
+    </View>
+    
+    </View>
+    
   );
 };
 

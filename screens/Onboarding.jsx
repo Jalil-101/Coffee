@@ -8,6 +8,7 @@ import {
 } from "react-native";
 import React from "react";
 import Tabs from "../components/Tabs";
+import Slider from "../components/Slider";
 
 const Onboarding = ({navigation}) => {
   return (
@@ -61,12 +62,12 @@ const Onboarding = ({navigation}) => {
 "
                 >
                   <Text className="text-xl text-white font-bold ">
-                    {" "}
                     Get Start
                   </Text>
                 </TouchableOpacity>
               </View>
             </View>
+          
           </View>
         </View>
       </SafeAreaView>
