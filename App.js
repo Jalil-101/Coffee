@@ -6,17 +6,21 @@ import Home from "./screens/Home";
 import Tabs from "./components/Tabs";
 import Onboarding from "./screens/Onboarding";
 import { Header } from "react-native/Libraries/NewAppScreen";
+import Order from "./screens/Order";
+import Delivery from "./screens/Delivery";
 
 
 const Stack = createNativeStackNavigator();
 
 function App() {
   return (
-    <NavigationContainer >
+    <NavigationContainer>
       <Stack.Navigator screenOptions={{ headerShown: false }}>
         <Stack.Screen name="onboarding" component={Onboarding} />
+        <Stack.Screen name="order" component={Order} />
+        <Stack.Screen name="delivery" component={Delivery} />
+
         <Stack.Screen name="tabs" component={Tabs} />
-    
       </Stack.Navigator>
     </NavigationContainer>
   );

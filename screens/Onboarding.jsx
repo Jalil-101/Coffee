@@ -65,9 +65,10 @@ const Onboarding = ({navigation}) => {
                     Get Start
                   </Text>
                 </TouchableOpacity>
+
+               
               </View>
             </View>
-          
           </View>
         </View>
       </SafeAreaView>
