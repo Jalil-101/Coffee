@@ -1,6 +1,7 @@
 import {
   View,
   Text,
+  ScrollView,
   SafeAreaView,
   TouchableWithoutFeedback,
   Keyboard,
@@ -11,21 +12,15 @@ import Slider from "../components/Slider";
 import Body from "../components/Body";
 const Home = () => {
   return (
-
-      <TouchableWithoutFeedback
-        onPress={() => {
-          Keyboard.dismiss();
-        }}
-      >
-        <View>
+    <SafeAreaView className="bg-[#1F1F1F]">
+      <ScrollView showsVerticalScrollIndicator={false}>
+        <View className="bg-slate-100">
           <Head />
-        
-        
-              <Slider />
-              <Body/>
+          <Slider />
+          <Body />
         </View>
-      </TouchableWithoutFeedback>
-    
+      </ScrollView>
+    </SafeAreaView>
   );
 };
 
