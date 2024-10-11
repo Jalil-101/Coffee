@@ -8,6 +8,7 @@ import Onboarding from "./screens/Onboarding";
 import { Header } from "react-native/Libraries/NewAppScreen";
 import Order from "./screens/Order";
 import Delivery from "./screens/Delivery";
+import Detail from "./screens/Detail";
 
 
 const Stack = createNativeStackNavigator();
@@ -19,6 +20,7 @@ function App() {
         <Stack.Screen name="onboarding" component={Onboarding} />
         <Stack.Screen name="order" component={Order} />
         <Stack.Screen name="delivery" component={Delivery} />
+        <Stack.Screen name="detail" component={Detail} />
 
         <Stack.Screen name="tabs" component={Tabs} />
       </Stack.Navigator>

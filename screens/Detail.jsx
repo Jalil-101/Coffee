@@ -65,20 +65,24 @@ const Detail = ({navigation}) => {
                 </View>
                 <View className="pl-28">
                   <View className="flex-row space-x-4 ">
-                    <View className="border-2 w-12 h-12 justify-center items-center rounded-full border-white bg-white">
-                      <FontAwesome5
-                        name="cookie-bite"
-                        size={24}
-                        color="#C67C4E"
-                      />
-                    </View>
-                    <View className="border-2 w-12 h-12 justify-center items-center rounded-full border-white bg-white">
-                      <FontAwesome6
-                        name="jug-detergent"
-                        size={24}
-                        color="#C67C4E"
-                      />
-                    </View>
+                    <TouchableOpacity>
+                      <View className="border-2 w-12 h-12 justify-center items-center rounded-full border-white bg-white">
+                        <FontAwesome5
+                          name="cookie-bite"
+                          size={24}
+                          color="#C67C4E"
+                        />
+                      </View>
+                    </TouchableOpacity>
+                    <TouchableOpacity>
+                      <View className="border-2 w-12 h-12 justify-center items-center rounded-full border-white bg-white">
+                        <FontAwesome6
+                          name="jug-detergent"
+                          size={24}
+                          color="#C67C4E"
+                        />
+                      </View>
+                    </TouchableOpacity>
                   </View>
                 </View>
               </View>
@@ -97,6 +101,7 @@ const Detail = ({navigation}) => {
                 <View className="border-2 border-gray-400 h-10  w-1/4 rounded-lg justify-center items-center">
                   <Text className="text-xl ">S</Text>
                 </View>
+
                 <View className="border-2 border-red-400 bg-red-200 h-10  w-1/4 rounded-lg justify-center items-center">
                   <Text className="text-xl text-red-400 ">M</Text>
                 </View>

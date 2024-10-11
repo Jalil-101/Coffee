@@ -1,4 +1,4 @@
-import { View, Text, Image } from "react-native";
+import { View, Text, Image, TouchableOpacity } from "react-native";
 import React from "react";
 import Octicons from "@expo/vector-icons/Octicons";
 import AntDesign from "@expo/vector-icons/AntDesign";
@@ -30,14 +30,14 @@ const Body = () => {
                 <Text className="text-gray-500">with Chocolate</Text>
                 <View className="flex-row justify-center items-baseline space-x-16">
                   <Text className="text-xl font-bold pt-2">$4.53</Text>
-                  <FontAwesome name="plus-square" size={38} color="#C67C4E" />
+                  <TouchableOpacity>
+                    <FontAwesome name="plus-square" size={38} color="#C67C4E" />
+                  </TouchableOpacity>
                 </View>
               </View>
             </View>
           </View>
         </View>
-
-        {/* first pair  */}
 
         <View className="border-2  w-40 h-60 rounded-lg border-white bg-white ">
           <View>
@@ -60,15 +60,15 @@ const Body = () => {
                 <Text className="text-gray-500">with Oat milk</Text>
                 <View className="flex-row justify-center items-baseline space-x-16">
                   <Text className="text-xl font-bold pt-2">$3.90</Text>
-                  <FontAwesome name="plus-square" size={38} color="#C67C4E" />
+                  <TouchableOpacity>
+                    <FontAwesome name="plus-square" size={38} color="#C67C4E" />
+                  </TouchableOpacity>
                 </View>
               </View>
             </View>
           </View>
         </View>
       </View>
-
-      {/* second pair */}
 
       <View className="p-4 flex-row gap-6">
         <View className="border-2  w-40 h-60 rounded-lg border-white bg-white ">
@@ -92,14 +92,14 @@ const Body = () => {
                 <Text className="text-gray-500">with Steamed milk</Text>
                 <View className="flex-row justify-center items-baseline space-x-16">
                   <Text className="text-xl font-bold pt-2">$4.53</Text>
-                  <FontAwesome name="plus-square" size={38} color="#C67C4E" />
+                  <TouchableOpacity>
+                    <FontAwesome name="plus-square" size={38} color="#C67C4E" />
+                  </TouchableOpacity>
                 </View>
               </View>
             </View>
           </View>
         </View>
-
-        {/* first pair  */}
 
         <View className="border-2  w-40 h-60 rounded-lg border-white bg-white ">
           <View>
@@ -122,7 +122,9 @@ const Body = () => {
                 <Text className="text-gray-500">with Soy milk</Text>
                 <View className="flex-row justify-center items-baseline space-x-16">
                   <Text className="text-xl font-bold pt-2">$3.90</Text>
-                  <FontAwesome name="plus-square" size={38} color="#C67C4E" />
+                  <TouchableOpacity>
+                    <FontAwesome name="plus-square" size={38} color="#C67C4E" />
+                  </TouchableOpacity>
                 </View>
               </View>
             </View>

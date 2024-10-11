@@ -44,6 +44,7 @@ const Tabs = () => {
           component={Detail}
           options={{
             tabBarIconStyle: { color: "#FF6464" },
+            tabBarStyle: { display: "none" },
             tabBarIcon: ({ color, size }) => (
               <Ionicons name="heart-half-outline" size={24} color="gray" />
             ),
@@ -54,6 +55,7 @@ const Tabs = () => {
           name="order"
           component={Order}
           options={{
+            tabBarStyle: { display: "none" },
             tabBarIcon: ({ color, size }) => (
               <FontAwesome6 name="bag-shopping" size={24} color="gray" />
             ),
@@ -64,6 +66,7 @@ const Tabs = () => {
           name="delivery"
           component={Delivery}
           options={{
+            tabBarStyle: { display: "none"},
             tabBarIcon: ({ color, size }) => (
               <Octicons name="bell-fill" size={24} color="gray" />
             ),
